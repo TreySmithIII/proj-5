@@ -1,8 +1,16 @@
-figure {
+.image-area {
 display:flex;
 flex-wrap:wrap;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+
+}
+.search{
+text-align: center;
+
+}
+.single-img {
+padding: 0  20px 20px ;
 
 }
