@@ -5,16 +5,17 @@
     <title>Photo Gallery</title>
     <link rel="stylesheet" href ="css/normalize.css">
     <link rel ="stylesheet" href="dist/dscss/lightbox.min.css">
+    <link rel ="stylesheet" href="hideseek/styles.css">
     <link rel= "stylesheet" href="css/style.css">
   </head>
   <body>
   <main>
 
     
-        <div class="search"><input type="text" placeholder="search" /></div>
-        <div class="image-area">
+        <div class="search"><input type="text" placeholder="search" data-toggle="hideseek" data-list=".list"/></div>
+        <div class="image-area list">
         <div class="single-img"><a href="photo/01.jpg" data-lightbox="images" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="thumbnails/01.jpg" alt="" /></a></div>
-        <div class="single-img"><a href="photo/02.jpg" data-lightbox="images"data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="thumbnails/02.jpg" alt="" /></a></div>
+        <div class="single-img"><a href=" photo/02.jpg" data-lightbox="images"data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="thumbnails/02.jpg" alt="" /></a></div>
         <div class="single-img"><a href="photo/03.jpg" data-lightbox="images"data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="thumbnails/03.jpg" alt="" /></a></div>
         <div class="single-img"><a href="photo/04.jpg" data-lightbox="images"data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="thumbnails/04.jpg" alt="" /></a></div>
         <div class="single-img"><a href="photo/05.jpg" data-lightbox="images"data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="thumbnails/05.jpg" alt="" /></a></div>
@@ -28,8 +29,14 @@
         </div>
   </main>
   <script>
-      
+      $('.list').ready(function() {
+	$('#search').hideseek();
+});
   </script>
+  
  <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+ <script  src="hideseek/jquery.hideseek.min.js"></script>
+ <script type="text/javascript" src="hideseek/jquery-1.9.1.min.js"></script>
+
   </body>
 </html>
