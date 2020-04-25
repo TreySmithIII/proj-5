@@ -6,11 +6,21 @@ align-items: center;
 justify-content: center;
 
 }
-.search{
+#search{
 text-align: center;
+width: 505px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    height: 44px;
+    border-radius: 4px;
+    outline:none;
+    border: solid 2px gainsboro;
 
 }
-.single-img {
+a {
 padding: 0  20px 20px ;
 
+}
+body {
+    text-align: center;
 }
